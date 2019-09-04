@@ -1,0 +1,260 @@
+.header {
+  left: 5%;
+  top: 10%;
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  border-width: 2px;
+  display: flex;
+  align-items: center;
+  background-color:#010B40;
+
+}
+.body{
+}
+
+.main-img-cont{
+
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  width: 10rem;
+
+}
+
+.logo {
+  margin: 0.5rem;
+  width: 5rem;
+  height: 3rem;
+
+}
+
+.main-menu {
+width: 100%;
+display: flex;
+align-items:  center;
+justify-content:  space-around;
+}
+
+.main-menu-item {
+ 
+  margin-left: 0.5rem;
+  font-family: 'Alfa Slab One', cursive;
+ }
+
+ .link{
+  color: #F6F8FE;
+  text-decoration: none;
+
+ }
+
+/* index.html */
+
+.index-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
+  margin-top: 2rem;
+  width: 100%;
+  height: 100%;
+  
+}
+
+.img-index{
+  width: 80rem;
+  height:20rem;
+  border-radius: 2rem;
+
+}
+
+.para-index{
+  padding-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-family: 'Alfa Slab One', cursive;
+  font-size:2.5rem;
+  text-align: center;
+  margin-top: 2rem;
+  color: #010B40;
+}
+
+.sections-menu {
+  margin-top: 1rem;
+  margin-left:1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+}
+
+.sections-menu-item {
+
+  margin-top: 2rem;
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  height: 10rem;
+}
+
+.sections-menu-item-image {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 2rem;
+}
+
+.sections-menu-item-text {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 1rem;
+  width: 15rem;
+  height: 15rem;
+}
+.sections-menu-item-text-title{
+  padding-bottom: 0.5rem;
+  font-family: 'Alfa Slab One', cursive;
+  line-height: 1.5rem;
+  padding-top: 2rem;
+  font-size:1rem;
+  color: #010B40;
+}
+
+/* secao.html */
+
+.section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction:column;
+  margin-top: 2rem;
+  width: 100%;
+  height: 100%;
+
+}
+
+.section-title-image {
+  width: 80rem;
+  height: 20rem;
+  border-radius: 2rem;
+
+}
+
+.section-para{
+  padding-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-family: 'Alfa Slab One', cursive;
+  font-size:2.5rem;
+  text-align: center;
+  margin-top: 2rem;
+  color:#010B40;
+}
+
+.projects-menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.projects-menu-item {
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-evenly;
+  height: 100%
+}
+
+.projects-menu-item-image {
+  width: 15rem;
+  height: 10rem;
+  border-radius: 2rem;
+  align-content: space-between
+  
+}
+
+.projects-menu-item-text {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 1rem;
+  width: 15rem;
+  height: 15rem;
+}
+
+.texto{
+  padding-top: 1rem;
+  font-family: 'Roboto Condensed', sans-serif;
+  line-height: 1rem;
+  color: #524D96;
+}
+
+/* projeto.html */
+
+.project-main{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.project-title {
+  text-align: center;
+  margin-top: 2rem;
+  width: 100%;
+  font-family: 'Alfa Slab One', cursive ;
+  font-size:2.5rem;
+  color:#010B40;
+
+}
+
+.project-cont{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.project-image-cont{
+  display: flex;
+  justify-content: space-evenly;
+  align-items:center;
+  padding:2rem;
+  width: 20rem;
+}
+
+.project-image {
+
+  width: 30rem;
+  height: 35rem;
+  border-radius: 2rem;
+
+}
+
+.project-text {
+  padding: 2rem;
+  width: 30rem;
+  font-family: 'Roboto Condensed', sans-serif;
+  line-height: 1.5rem;
+  align-content: space-around
+}
+
+.destaque{
+    font-family: 'Alfa Slab One', cursive;
+    padding-bottom: 0.5rem;
+    padding-top: 2rem;
+    font-size:1rem;
+    color: #010B40;
+
+}
+
+
+
+

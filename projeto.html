@@ -7,6 +7,8 @@
   <link href="assets/css/reset.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
   <meta charset="utf-8">
+  <script src="assets/js/codes.js"></script>
+  <script src="assets/js/projetos.js"></script>
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
 </head>
@@ -18,19 +20,19 @@
       </a>
     </div>
     <ul class="main-menu">
-      <li class="main-menu-item"><a class = "link" href="categoria.html">Ciências Exatas</a></li>
-      <li class="main-menu-item"><a class = "link" href="categoria.html">Computação</a></li>
-      <li class="main-menu-item"><a class = "link" href="categoria.html">Design</a></li>
+      {{#each sessao}}
+      <li class="main-menu-item"><a class = "link" href="categoria.html?key={{@key}}">{{this.nome}}</a></li>
+      {{/each}}
     </ul>
   </header>
 
   <main class="project-main">
     <h1 class="project-title">
-      Cálculo e suas funcionalidades
+      {{this.titulo}}
     </h1>
     <div class="project-cont">
       <div class="project-image-cont">
-        <img  class="project-image" src="assets/img/calculodia.jpg" alt=" cálculo">
+        <img  class="project-image" src="assets/img/{{@value}}.jpg" alt=" {{@valeu}}">
       </div>
 
       <div class="project-text">
@@ -38,32 +40,7 @@
           Descrição
         </h2>
         <p class = "texto">
-          No mundo que nos rodeia quase tudo depende de várias variáveis: pressão atmosférica, 
-          temperatura, densidades de massa ou de carga eléctrica, grandezas económicas, 
-          grandezas mecânicas como a posição, a velocidade ou a aceleração. 
-          Algumas destas grandezas são representadas matematicamente por campos escalares; 
-          em cada ponto temos um número que significa, nalguma unidade, por exemplo uma temperatura, 
-          ou uma pressão, ou uma densidade de massa por unidade de volume. 
-          Outras grandezas são representadas por campos vectoriais; em cada ponto temos um vector que representa, 
-          por exemplo, uma força aplicada nesse ponto, ou a posição de uma partícula ou a sua velocidade. 
-          O que significa dizer que estas grandezas variam continuamente ? 
-          O que significa tomar derivadas destas grandezas segundo uma direcção ? 
-          O que é um gradiente de pressão ou um gradiente de temperatura ? O que é uma linha isobárica ? 
-          E uma linha isotérmica ? O que é uma superfície equipotencial quando estamos na presença de um campo electroestático ? 
-          Como manipular e representar estes objectos matemáticos ? Todos estas ideias se aprendem a manipular 
-          em CII e correspondem a conceitos do Cálculo Diferencial de Várias Variáveis.
-        </p>
-
-        <h2 class = "destaque">
-          Engenheiros
-        </h2>
-        <p class = "texto">
-        
-            <li><ul>Daniela Alves</ul></li>
-            <li> <ul>Ronald Pereira</ul></li>
-            <li><ul>Esther Menches</ul></li>
-            <li><ul>Gabriel Silva</ul></li>
-            <li><ul>Maria Vasconcellos</ul></li>
+          {{this.descricao}}
         </p>
       </div>
     </div>
